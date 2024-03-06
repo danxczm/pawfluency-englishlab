@@ -1,6 +1,12 @@
 import Link from 'next/link';
 
-const Header = () => {
+import { getSession } from '../actions';
+
+import Logout from './Logout';
+
+const Navbar = async () => {
+  const session = await getSession();
+
   return (
     <header>
       <nav className='border-gray-200 bg-white px-4 py-4'>
@@ -19,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

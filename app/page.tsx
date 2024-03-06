@@ -1,10 +1,3 @@
-import Image from 'next/image';
-import Header from './components/Header';
-
 export default function Home() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <main className='text-center'>HOME PAGE</main>;
 }
